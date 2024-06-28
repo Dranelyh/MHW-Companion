@@ -1,11 +1,549 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Bestiaire_background"
+    android:orientation="horizontal"
     tools:context=".BestiaireActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Anjanath"
+                    android:drawableTop="@drawable/anjanath_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Anjanath"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Barroth"
+                    android:drawableTop="@drawable/barroth_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Barroth"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bazelgeuse"
+                    android:drawableTop="@drawable/bazelgeuse_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Bazelgeuse"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bazelgeuse Vulcan"
+                    android:drawableTop="@drawable/bazelgeuse_seething_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Seething+Bazelgeuse"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Behemoth"
+                    android:drawableTop="@drawable/behemoth_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Behemoth"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Deviljho"
+                    android:drawableTop="@drawable/deviljho_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Deviljho"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Deviljho Carnage"
+                    android:drawableTop="@drawable/deviljho_savage_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Savage+Deviljho"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Diablos"
+                    android:drawableTop="@drawable/diablos_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Diablos"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Diablos Noir"
+                    android:drawableTop="@drawable/diablos_black_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Black+Diablos"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dodogama"
+                    android:drawableTop="@drawable/dodogama_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Dodogama"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Grand Girros"
+                    android:drawableTop="@drawable/greatgirros_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Great+Girros"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Grand Jagras"
+                    android:drawableTop="@drawable/greatjagras_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Great+Jagras"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Jyuratodus"
+                    android:drawableTop="@drawable/jyuratodus_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Jyuratodus"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Kirin"
+                    android:drawableTop="@drawable/kirin_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Kirin"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Kulu-Ya-Ku"
+                    android:drawableTop="@drawable/kuluyaku_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Kulu-Ya-Ku"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Kulve Taroth"
+                    android:drawableTop="@drawable/kulvetaroth_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Kulve+Taroth"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Kushala Daora"
+                    android:drawableTop="@drawable/kushala_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Kushala+Daora"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Lavasioth"
+                    android:drawableTop="@drawable/lavasioth_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Lavasioth"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Legiana"
+                    android:drawableTop="@drawable/legiana_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Legiana"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Lunastra"
+                    android:drawableTop="@drawable/lunastra_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Lunastra"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Nergigante"
+                    android:drawableTop="@drawable/nergigante_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Nergigante"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Odogaron"
+                    android:drawableTop="@drawable/odogaron_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Odogaron"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Paolumu"
+                    android:drawableTop="@drawable/paolumu_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Paolumu"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pukei-Pukei"
+                    android:drawableTop="@drawable/pukeipukei_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Pukei-Pukei"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Radobaan"
+                    android:drawableTop="@drawable/radobaan_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Radobaan"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rathalos"
+                    android:drawableTop="@drawable/rathalos_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Rathalos"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rathalos Azur"
+                    android:drawableTop="@drawable/rathalos_azure_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Azure+Rathalos"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rathian"
+                    android:drawableTop="@drawable/rathian_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Rathian"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Rathian Rose"
+                    android:drawableTop="@drawable/rathian_pink_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Pink+Rathian"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Teostra"
+                    android:drawableTop="@drawable/teostra_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Teostra"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tobi-Kadachi"
+                    android:drawableTop="@drawable/tobikadachi_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Tobi-Kadachi"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tzitzi-Ya-Ku"
+                    android:drawableTop="@drawable/tzitziyaku_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Tzitzi-Ya-Ku"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Uragaan"
+                    android:drawableTop="@drawable/uragaan_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Uragaan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Vaal Hazak"
+                    android:drawableTop="@drawable/vaalhazak_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Vaal+Hazak"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Vaal Hazak Fléau"
+                    android:drawableTop="@drawable/vaalhazak_blackveil_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Blackveil+Vaal+Hazak"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Xeno'jiiva"
+                    android:drawableTop="@drawable/xenojiiva_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Xeno'jiiva"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Zorah Magdaros"
+                    android:drawableTop="@drawable/zorahmag_crop"
+                    android:background="@drawable/bouton_bestiaire"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:onClick="lien"
+                    android:tag="Zorah+Magdaros"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
