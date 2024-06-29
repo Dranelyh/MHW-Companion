@@ -22,10 +22,9 @@ public class BestiaireActivity extends AppCompatActivity {
 
     public void lien(View view) {
         String monster = view.getTag().toString();
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://monsterhunterworld.wiki.fextralife.com/" + monster));
-        startActivity(intent);
+
+        Intent intentMonstre = new Intent(this, MonstreActivity.class);
+        intentMonstre.putExtra("monstre", monster);
+        startActivity(intentMonstre);
     }
 }
