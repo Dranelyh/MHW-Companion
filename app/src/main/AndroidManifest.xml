@@ -15,6 +15,24 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ElderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ValActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CorailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsteraActivity"
+            android:exported="false" />
+        <activity
             android:name=".MonstreActivity"
             android:exported="false" />
         <activity

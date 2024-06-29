@@ -1,9 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/Carte_background"
-    tools:context=".CarteActivity"/>
+    tools:context=".CarteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Le nouveau monde"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/monsterhunter"
+        android:gravity="center"
+        android:paddingTop="50dp"/>
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/zoom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        app:hasClickableChildren="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/world_map" />
+
+            <ImageView
+                android:id="@+id/astera"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="380dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/astera"
+                android:onClick="asteraClick"
+                />
+            <ImageView
+                android:id="@+id/asteraFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="355dp"
+                android:layout_marginTop="395dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:alpha="0.6"
+                />
+
+            <ImageView
+                android:id="@+id/foret"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="340dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/foret"
+                android:onClick="foretClick"
+                />
+            <ImageView
+                android:id="@+id/foretFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="335dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:onClick="foretClick"
+                android:alpha="0.6"
+                />
+
+            <ImageView
+                android:id="@+id/desert"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="500dp"
+                android:layout_marginTop="380dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/desert"
+                android:onClick="desertClick"
+                />
+            <ImageView
+                android:id="@+id/desertFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="495dp"
+                android:layout_marginTop="380dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:alpha="0.6"
+                />
+
+            <ImageView
+                android:id="@+id/corail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="460dp"
+                android:layout_marginTop="180dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/corail"
+                android:onClick="corailClick"
+                />
+            <ImageView
+                android:id="@+id/corailFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="455dp"
+                android:layout_marginTop="180dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:alpha="0.6"
+                />
+
+            <ImageView
+                android:id="@+id/val"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="470dp"
+                android:layout_marginTop="270dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/val"
+                android:onClick="valClick"
+                />
+            <ImageView
+                android:id="@+id/valFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="463dp"
+                android:layout_marginTop="265dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:alpha="0.6"
+                />
+
+            <ImageView
+                android:id="@+id/elder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="580dp"
+                android:layout_marginTop="90dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="10dp"
+                android:src="@drawable/elder"
+                android:onClick="elderClick"
+                />
+            <ImageView
+                android:id="@+id/elderFond"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="575dp"
+                android:layout_marginTop="90dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bouton_carte"
+                android:alpha="0.6"
+                />
+
+        </FrameLayout>
+    </com.otaliastudios.zoom.ZoomLayout>
+
+</LinearLayout>

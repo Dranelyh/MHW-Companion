@@ -8,4 +8,5 @@
     <color name="Carte_background">#2B241A</color>
     <color name="Accueil_bouton">#D48F12</color>
     <color name="Bestiaire_bouton">#D48F12</color>
+    <color name="Carte_bouton">#EEDBBD</color>
 </resources>
