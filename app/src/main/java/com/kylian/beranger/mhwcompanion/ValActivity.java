@@ -1,6 +1,8 @@
 package com.kylian.beranger.mhwcompanion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +17,12 @@ public class ValActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_val);
+    }
+    public void lien(View view) {
+        String lieu = view.getTag().toString();
+
+        Intent intentLieu = new Intent(this, LieuActivity.class);
+        intentLieu.putExtra("lieu", lieu);
+        startActivity(intentLieu);
     }
 }

@@ -1,6 +1,8 @@
 package com.kylian.beranger.mhwcompanion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +18,12 @@ public class ForetActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_foret);
 
+    }
+    public void lien(View view) {
+        String lieu = view.getTag().toString();
+
+        Intent intentLieu = new Intent(this, LieuActivity.class);
+        intentLieu.putExtra("lieu", lieu);
+        startActivity(intentLieu);
     }
 }
