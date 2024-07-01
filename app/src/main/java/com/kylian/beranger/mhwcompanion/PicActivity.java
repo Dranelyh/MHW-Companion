@@ -82,7 +82,7 @@ public class PicActivity extends AppCompatActivity {
         dicoMonstres.put(R.drawable.tzitziyaku, "Tzitzi-Ya-Ku");
         dicoMonstres.put(R.drawable.uragaan, "Uragaan");
         dicoMonstres.put(R.drawable.vaalhazak, "Vaal Hazak");
-        dicoMonstres.put(R.drawable.vaalhazak_blackveil, "Vaal Hazak FlÃ©au");
+        dicoMonstres.put(R.drawable.vaalhazak_blackveil, "Vaal Hazak Fléau");
         dicoMonstres.put(R.drawable.xenojiiva, "Xeno'jiiva");
         dicoMonstres.put(R.drawable.zorahmag, "Zorah Magdaros");
 
