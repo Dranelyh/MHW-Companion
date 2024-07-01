@@ -1,6 +1,8 @@
 package com.kylian.beranger.mhwcompanion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +17,19 @@ public class JeuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_jeu);
+    }
+
+    public void lancerJeuPic(View view) {
+
+        Intent intentPic = new Intent(this, PicActivity.class);
+
+        startActivity(intentPic);
+    }
+
+    public void lancerJeuName(View view) {
+
+        Intent intentName = new Intent(this, NameActivity.class);
+
+        startActivity(intentName);
     }
 }

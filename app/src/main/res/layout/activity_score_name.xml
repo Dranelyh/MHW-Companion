@@ -6,31 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Jeu_background"
-    tools:context=".JeuActivity">
+    tools:context=".ScorePicActivity">
 
-    <Button
-        android:id="@+id/buttonPic"
+    <TextView
+        android:id="@+id/textViewScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="lancerJeuPic"
-        android:text="Trouver le bon nom du Monstre"
-        android:background="@drawable/bouton_jeu"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonName"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:fontFamily="@font/monsterhunter"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonName"
+        android:id="@+id/buttonMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="lancerJeuName"
-        android:text="Trouver la bonne icône du Monstre"
+        android:text="Revenir au menu"
+        android:onClick="retour"
         android:background="@drawable/bouton_jeu"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPic" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewScore" />
 </androidx.constraintlayout.widget.ConstraintLayout>
